@@ -1,3 +1,5 @@
+require 'pry'
+
 class Genre
   attr_accessor :name
 
@@ -31,6 +33,7 @@ class Genre
   def add_song(song)
     @songs << song unless self.songs.include?(song)
     song.genre = self unless song.genre == self
+    binding.pry
   end
 
   def songs
