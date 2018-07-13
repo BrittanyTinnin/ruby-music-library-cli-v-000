@@ -23,6 +23,10 @@ class Genre
     song
   end
 
+  def songs
+    @songs
+  end
+
 
   def self.destroy_all
     @@all.clear
