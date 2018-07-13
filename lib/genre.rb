@@ -32,7 +32,7 @@ class Genre
     @songs << song unless self.songs.include?(song)
     song.genre = self unless song.genre == self
   end
-    
+
   def songs
     @songs
   end
